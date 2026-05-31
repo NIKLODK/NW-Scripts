@@ -1,8 +1,8 @@
 fx_version "cerulean"
 games { 'gta5' }
 
-author 'NIKLO'
-description 'Elevator'
+author 'NIKLO & Floky'
+description 'Elevator from Wiwang Hotel, With changes.'
 version '4.0.4'
 
 dependencies {
