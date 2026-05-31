@@ -12,7 +12,7 @@ const DISCORD_STAFF_ROLE_ID = "1470874573850415184";
 const DISCORD_UNTRUSTED_ROLE_ID = "1446976459150196851";
 const DISCORD_SUPERUSER_IDS = ["291255160590827520", "1372509510874169354"];
 // Bot token required for staff sync (enable Server Members Intent in Discord Developer Portal).
-const DISCORD_BOT_TOKEN = "MTQ0Njk4NDI5MDk2NDYwMzAzMA.GwgPDy.WTJz0RbuXZKjgvUSvP7YwapuffbhEgVD3gwNgo";
+const DISCORD_BOT_TOKEN = "";
 // Preferred target for new application alerts (Discord channel ID).
 const DISCORD_APPLICATION_CHANNEL_ID = "1475133510858576084";
 // Secret used to sign Discord approve/deny action links.
