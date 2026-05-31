@@ -1,0 +1,20 @@
+-- ## 3dme : shared config file
+
+Config = {
+    language = 'da',
+    visual = {
+        color = { r = 230, g = 230, b = 230, a = 255 }, -- Text color
+        font = 0, -- Text font
+        time = 5000, -- Duration to display the text (in ms)
+        scale = 0.5, -- Text scale
+        dist = 250, -- Min. distance to draw 
+    },
+}
+
+Languages = {
+    ['en'] = {
+        commandName = 'me',
+        commandDescription = 'Vis en handling over dit hoved.',
+        commandSuggestion = {{ name = 'action', help = '"scratch his nose" for example.'}},
+    },
+}

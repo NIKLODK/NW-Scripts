@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gang Laptop</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main id="app" class="hidden">
+        <section class="desktop">
+            <header class="system-strip">
+                <span class="system-chip">NW OS</span>
+                <span id="modeTag" class="mode-tag">NUI</span>
+            </header>
+
+            <div class="desktop-icons">
+                <button id="illegalIcon" class="desktop-icon" type="button">
+                    <span class="icon-glyph">IA</span>
+                    <span class="icon-label">Illegal Apps</span>
+                </button>
+            </div>
+
+            <section id="illegalWindow" class="window hidden">
+                <header class="window-titlebar">
+                    <div class="window-title-wrap">
+                        <span class="window-dot"></span>
+                        <h2>Illegal Apps</h2>
+                    </div>
+                    <button id="windowCloseBtn" class="window-close" type="button">X</button>
+                </header>
+
+                <div class="window-content">
+                    <p class="window-sub">installer</p>
+                    <h3>Bande App</h3>
+                    <p id="statusText" class="status-text">Ready to install app from SIM card.</p>
+                    <button id="installBtn" class="btn btn-install" type="button">Install App To Tablet</button>
+                </div>
+            </section>
+
+            <footer class="taskbar">
+                <button id="startBtn" class="task-btn" type="button">Start</button>
+                <button id="taskIllegalBtn" class="task-btn task-app" type="button">Illegal Apps</button>
+                <span class="task-spacer"></span>
+                <span id="clock" class="clock">00:00</span>
+                <button id="closeBtn" class="task-btn task-close" type="button">Close Laptop</button>
+            </footer>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

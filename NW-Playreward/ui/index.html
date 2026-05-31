@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>NW Daily Reward</title>
+</head>
+<body>
+    <section id="reward-ui" class="hidden">
+        <article class="panel">
+            <div class="money-bg" aria-hidden="true">
+                <img src="images/money.png" alt="" class="money-img" />
+            </div>
+
+            <div class="label-top">RESTERENDE</div>
+            <div class="countdown" id="countdown">00:00:00</div>
+            <div class="label-mid">F&Oslash;R N&AElig;STE REWARD</div>
+
+            <div class="reward-chip" id="next-reward">$5,000 cash</div>
+
+            <div class="progress">
+                <div class="bar" id="next-progress"></div>
+            </div>
+
+            <div class="meta-row">
+                <span id="online-time">Online: 00:00:00</span>
+            </div>
+        </article>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

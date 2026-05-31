@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NW Loading Screen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="bg-slide is-active" id="bg-slide-a"></div>
+        <div class="bg-slide" id="bg-slide-b"></div>
+        <div class="bg-overlay"></div>
+        <div class="bg-grain"></div>
+    </div>
+
+    <main class="layout">
+        <section class="panel">
+            <div class="brand-row">
+                <div class="logo-mark">
+                    <img src="logo.png" alt="Stavex logo">
+                </div>
+                <div class="brand-copy">
+                    <h1 class="server-name" id="server-name">StavexRP</h1>
+                    <p class="stage-text" id="stage-text">Forbinder til serveren...</p>
+                </div>
+            </div>
+
+            <div class="progress-block">
+                <div class="progress-head">
+                    <span>Load status</span>
+                    <span class="progress-value">
+                        <i class="progress-dot" aria-hidden="true"></i>
+                        <span id="progress-text">0%</span>
+                    </span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <span>Aktuel fase</span>
+                    <strong id="phase-name">Booting</strong>
+                </article>
+                <article class="stat-card">
+                    <span>Lokal tid</span>
+                    <strong id="clock">--:--:--</strong>
+                </article>
+                <article class="stat-card stat-log">
+                    <span>Tips</span>
+                    <strong id="tip-line">Tip bliver vist her...</strong>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bottom-bar">
+        <a class="bottom-link" id="website-link" href="https://stavexrp.xyz" target="_blank" rel="noreferrer noopener">
+            <span>Hjemmeside</span>
+            <strong id="website-text">stavexrp.xyz</strong>
+        </a>
+        <a class="bottom-link" id="discord-link" href="https://discord.gg/stavex" target="_blank" rel="noreferrer noopener">
+            <span>Discord</span>
+            <strong id="discord-text">discord.gg/stavex</strong>
+        </a>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

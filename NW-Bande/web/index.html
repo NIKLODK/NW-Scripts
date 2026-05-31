@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>StavexOS - Bande Tablet</title>
+</head>
+<body>
+    <div id="tablet-wrapper">
+        <div id="delete-modal" class="modal-overlay">
+            <div class="modal-box">
+                <div class="modal-icon">⚠️</div>
+                <h2>ER DU SIKKER?</h2>
+                <p>Dette vil opløse banden permanent. Alle medlemmer vil blive fjernet fra gruppen.</p>
+                <div class="modal-buttons">
+                    <button class="btn-confirm-delete" onclick="confirmDelete()">BEKRÆFT SLETNING</button>
+                    <button class="btn-cancel-delete" onclick="closeModal()">FORTRYD</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="skill-info-modal" class="modal-overlay">
+            <div class="modal-box" style="border-color: var(--accent);">
+                <h2 id="info-title">SKILL</h2>
+                <p id="info-desc">...</p>
+                <div class="modal-buttons">
+                    <button id="buy-confirm-btn" class="btn-confirm">KØB OPGRADERING</button>
+                    <button class="btn-cancel" onclick="closeSkillInfo()">LUK</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="tablet-container">
+            <div class="sidebar" id="tablet-sidebar">
+                <div class="logo-section-center">
+                    <div class="logo-img-container">
+                        <img src="./images/stavex.png" alt="Logo" class="sidebar-logo">
+                    </div>
+                    <div class="logo-text">STAVEX<span>OS</span></div>
+                </div>
+                
+                <nav>
+                    <button id="nav-home" onclick="showPage('home')" class="nav-btn active">Oversigt</button>
+                    <button id="nav-members" onclick="showPage('members')" class="nav-btn">Medlemmer</button>
+                    <button id="nav-missions" onclick="showPage('missions')" class="nav-btn">Missioner</button>
+                    <button id="nav-skills" onclick="showPage('skills')" class="nav-btn">Skill Tree</button>
+                    <button id="nav-settings" onclick="showPage('settings')" class="nav-btn">Indstillinger</button>
+                </nav>
+
+                <div class="sidebar-footer" style="margin-top: auto;">
+                    <div class="sidebar-invite">
+                        <label>INVITER SPILLER</label>
+                        <div class="invite-input-group">
+                            <input type="text" id="invite-player-id" placeholder="ID: 000">
+                            <button class="invite-send-btn" onclick="invitePlayer()">+</button>
+                        </div>
+                    </div>
+
+                    <button id="delete-gang-btn" class="delete-btn" onclick="openDeleteModal()" style="width: 100%; margin-top: 15px;">
+                        SLET BANDE
+                    </button>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="stars"></div>
+                <div class="shooting-star"></div>
+                <div class="shooting-star"></div>
+
+                <div id="start-screen" class="page active full-center">
+                    <div class="welcome-box">
+                        <h1 class="glitch" style="font-size: 45px; font-weight: 900; margin-bottom: 10px;">SYSTEM ADGANG</h1>
+                        <p class="subtitle" style="color: var(--text-dim); margin-bottom: 30px;">Opret bande eller bliv inviteret med spiller-ID</p>
+                        
+                        <div class="big-button-container" style="display: flex; gap: 20px; justify-content: center;">
+                            <div class="big-card" onclick="showPage('create-page')">
+                                <div class="card-glow"></div>
+                                <h3 style="margin: 0; font-size: 20px;">OPRET BANDE</h3>
+                                <span style="color: var(--accent); font-weight: 800;">50.000 DKK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="create-page" class="page full-center">
+                    <div class="terminal-box">
+                        <div class="terminal-header">SYSTEM_INIT: OPRET BANDE</div>
+                        <p class="terminal-subtitle">Angiv et navn til din bande</p>
+                        <input type="text" id="gang-name" placeholder="BANDENAVN..." maxlength="20">
+                        <div class="btn-group">
+                            <button class="btn-confirm" onclick="createGang()">BEKRÆFT</button>
+                            <button class="btn-cancel" onclick="showPage('start-screen')">AFBRYD</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="home" class="page">
+                    <div class="dashboard-header">
+                        <h1 id="ui-gang-name">SYSTEM_ONLINE</h1>
+                        <div class="status-badge">AKTIV</div>
+                    </div>
+                    <div class="stat-grid">
+                        <div class="stat-item">
+                            <label>BANDE LEVEL</label>
+                            <div class="value">LVL <span id="ui-gang-level">1</span></div>
+                        </div>
+                    </div>
+
+                    <div class="rank-admin-box">
+                        <div class="rank-admin-header">
+                            <h3>RANG SYSTEM</h3>
+                            <span id="rank-admin-note">Kun ejeren kan oprette ranks</span>
+                        </div>
+                        <div class="rank-create-row">
+                            <input type="text" id="new-rank-name" maxlength="24" placeholder="Nyt rangnavn">
+                            <button class="btn-confirm rank-create-btn" onclick="createRank()">OPRET RANK</button>
+                        </div>
+                        <div id="rank-list" class="rank-list"></div>
+                    </div>
+                </div>
+
+                <div id="settings" class="page">
+                    <div class="dashboard-header">
+                        <h1>INDSTILLINGER</h1>
+                    </div>
+                    <div class="settings-box">
+                        <div class="setting-item">
+                            <label>TABLET STØRELSE (<span id="scale-val">1.0</span>)</label>
+                            <input type="range" id="scale-slider" min="0.6" max="1.2" step="0.01" value="1.0" oninput="updateSettings()">
+                        </div>
+                        <div class="setting-item">
+                            <label>BAGGRUND GENNEMSIGTIGHED (<span id="opacity-val">1.0</span>)</label>
+                            <input type="range" id="opacity-slider" min="0.4" max="1.0" step="0.01" value="1.0" oninput="updateSettings()">
+                        </div>
+                        <button class="btn-confirm" style="width: 100%;" onclick="saveSettings()">GEM SESSION</button>
+                    </div>
+                </div>
+
+                <div id="members" class="page">
+                    <div class="dashboard-header">
+                        <h1>BANDE MEDLEMMER</h1>
+                        <div class="status-badge">ONLINE: <span id="online-count">0</span></div>
+                    </div>
+                    
+                    <div class="members-table-container">
+                        <table class="members-table">
+                            <thead>
+                                <tr>
+                                    <th>Navn</th>
+                                    <th>Rang</th>
+                                    <th>Status</th>
+                                    <th style="text-align: right;">Handlinger</th>
+                                </tr>
+                            </thead>
+                            <tbody id="member-list-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="skills" class="page">
+                    <div class="dashboard-header">
+                        <h1>SKILL TREE</h1>
+                        <div class="status-badge">POINTS: <span id="skill-points">3</span></div>
+                    </div>
+                    
+                    <div class="skill-tree-container">
+                        <div id="skill-tree-canvas" class="skill-tree-canvas">
+                            <svg id="skill-lines" class="skill-lines" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+                            <div id="skill-nodes" class="skill-nodes"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="missions" class="page">
+                    <div class="dashboard-header">
+                        <h1>TILGÆNGELIGE MISSIONER</h1>
+                        <div class="status-badge">NW-OS</div>
+                    </div>
+                    
+                    <div id="missions-list" class="missions-list"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
