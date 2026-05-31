@@ -1,0 +1,30 @@
+{
+    "owner": {
+        "label": "Ejer",
+        "permissions": [
+            "rules.manage",
+            "staff.view",
+            "staff.manage",
+            "*"
+        ]
+    },
+    "admin": {
+        "label": "Admin",
+        "permissions": [
+            "rules.manage",
+            "staff.view",
+            "staff.manage"
+        ]
+    },
+    "moderator": {
+        "label": "Moderator",
+        "permissions": [
+            "rules.manage",
+            "staff.view"
+        ]
+    },
+    "member": {
+        "label": "Medlem",
+        "permissions": []
+    }
+}

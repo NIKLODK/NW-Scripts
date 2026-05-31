@@ -1,0 +1,62 @@
+[
+    {
+        "id": "general",
+        "title": "Generelle regler",
+        "description": "Grundreglerne for serveren og fællesskabet.",
+        "order": 1,
+        "rules": [
+            {
+                "id": "respect",
+                "title": "Respekt og opførsel",
+                "body": "Behandl andre spillere og staff ordentligt. Racisme, chikane, trusler og unødig toxic adfærd accepteres ikke.",
+                "order": 1
+            },
+            {
+                "id": "staff-decisions",
+                "title": "Staff-beslutninger",
+                "body": "Staffs afgørelser skal respekteres. Er du uenig, skal det tages roligt gennem en ticket på Discord.",
+                "order": 2
+            }
+        ]
+    },
+    {
+        "id": "roleplay",
+        "title": "Roleplay-regler",
+        "description": "Regler for scenarier, karakterer og handlinger in-game.",
+        "order": 2,
+        "rules": [
+            {
+                "id": "stay-character",
+                "title": "Bliv i karakter",
+                "body": "Hold dig i karakter under scenarier. OOC-snak skal holdes ude af roleplay, medmindre staff beder om andet.",
+                "order": 1
+            },
+            {
+                "id": "rdm-vdm",
+                "title": "RDM og VDM",
+                "body": "Du må ikke dræbe eller skade andre uden gyldig roleplay-grund. Køretøjer må ikke bruges som våben uden et stærkt scenariegrundlag.",
+                "order": 2
+            },
+            {
+                "id": "powergaming",
+                "title": "Powergaming",
+                "body": "Du må ikke tvinge handlinger igennem, som andre spillere ikke realistisk kan reagere på.",
+                "order": 3
+            }
+        ]
+    },
+    {
+        "id": "support",
+        "title": "Support og Discord",
+        "description": "Sådan håndteres hjælp, klager og kontakt til staff.",
+        "order": 3,
+        "rules": [
+            {
+                "id": "tickets",
+                "title": "Brug tickets",
+                "body": "Har du brug for hjælp, skal du oprette en ticket på Discord. Undgå at spamme staff privat.",
+                "order": 1
+            }
+        ]
+    }
+]

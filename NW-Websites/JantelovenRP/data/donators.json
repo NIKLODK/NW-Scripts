@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Dxura",
+        "tier": "Grundlægger-supporter",
+        "amount": "1.250 DKK"
+    },
+    {
+        "name": "Nordic",
+        "tier": "Elite-supporter",
+        "amount": "750 DKK"
+    },
+    {
+        "name": "Mikkel",
+        "tier": "Supporter",
+        "amount": "500 DKK"
+    },
+    {
+        "name": "Oliver",
+        "tier": "Supporter",
+        "amount": "350 DKK"
+    },
+    {
+        "name": "Sebastian",
+        "tier": "Supporter",
+        "amount": "250 DKK"
+    },
+    {
+        "name": "Emil",
+        "tier": "Supporter",
+        "amount": "200 DKK"
+    }
+]

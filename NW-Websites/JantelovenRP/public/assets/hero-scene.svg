@@ -1,0 +1,75 @@
+<svg width="960" height="760" viewBox="0 0 960 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="760" rx="48" fill="#242424"/>
+  <rect x="26" y="26" width="908" height="708" rx="34" fill="url(#paint0_linear_1_2)" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="729" cy="171" r="136" fill="url(#paint1_radial_1_2)" fill-opacity="0.9"/>
+  <circle cx="188" cy="120" r="104" fill="url(#paint2_radial_1_2)" fill-opacity="0.32"/>
+  <path d="M82 583C167 492 280 462 418 462C553 462 688 510 878 625V698H82V583Z" fill="#3A3A3A"/>
+  <path d="M82 614C230 518 345 500 485 500C636 500 755 543 878 635V698H82V614Z" fill="#313131"/>
+  <rect x="121" y="301" width="42" height="210" rx="8" fill="#484848"/>
+  <rect x="171" y="233" width="58" height="278" rx="8" fill="#525252"/>
+  <rect x="242" y="274" width="72" height="237" rx="8" fill="#454545"/>
+  <rect x="330" y="187" width="84" height="324" rx="8" fill="#5B5B5B"/>
+  <rect x="429" y="256" width="49" height="255" rx="8" fill="#4A4A4A"/>
+  <rect x="493" y="218" width="66" height="293" rx="8" fill="#555555"/>
+  <rect x="572" y="160" width="88" height="351" rx="8" fill="#5E5E5E"/>
+  <rect x="676" y="280" width="51" height="231" rx="8" fill="#494949"/>
+  <rect x="740" y="214" width="64" height="297" rx="8" fill="#535353"/>
+  <rect x="818" y="250" width="34" height="261" rx="8" fill="#454545"/>
+  <g opacity="0.85">
+    <rect x="136" y="321" width="12" height="12" rx="3" fill="#C9C9C9"/>
+    <rect x="136" y="347" width="12" height="12" rx="3" fill="#C9C9C9"/>
+    <rect x="182" y="255" width="14" height="14" rx="3" fill="#D7D7D7"/>
+    <rect x="205" y="255" width="14" height="14" rx="3" fill="#D7D7D7"/>
+    <rect x="182" y="284" width="14" height="14" rx="3" fill="#D7D7D7"/>
+    <rect x="205" y="284" width="14" height="14" rx="3" fill="#D7D7D7"/>
+    <rect x="353" y="219" width="16" height="16" rx="3" fill="#ECECEC"/>
+    <rect x="378" y="219" width="16" height="16" rx="3" fill="#ECECEC"/>
+    <rect x="353" y="249" width="16" height="16" rx="3" fill="#ECECEC"/>
+    <rect x="378" y="249" width="16" height="16" rx="3" fill="#ECECEC"/>
+    <rect x="519" y="249" width="14" height="14" rx="3" fill="#E1E1E1"/>
+    <rect x="600" y="194" width="18" height="18" rx="4" fill="#F0F0F0"/>
+    <rect x="629" y="194" width="18" height="18" rx="4" fill="#F0F0F0"/>
+    <rect x="600" y="225" width="18" height="18" rx="4" fill="#F0F0F0"/>
+    <rect x="629" y="225" width="18" height="18" rx="4" fill="#F0F0F0"/>
+    <rect x="756" y="246" width="15" height="15" rx="3" fill="#E2E2E2"/>
+    <rect x="779" y="246" width="15" height="15" rx="3" fill="#E2E2E2"/>
+  </g>
+  <g filter="url(#filter0_d_1_2)">
+    <rect x="165" y="413" width="510" height="181" rx="28" fill="#191919" fill-opacity="0.84" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <rect x="196" y="447" width="175" height="112" rx="18" fill="#2E2E2E"/>
+    <rect x="220" y="471" width="128" height="10" rx="5" fill="#A7A7A7"/>
+    <rect x="220" y="494" width="96" height="10" rx="5" fill="#707070"/>
+    <rect x="220" y="517" width="136" height="10" rx="5" fill="#707070"/>
+    <rect x="397" y="447" width="247" height="48" rx="18" fill="#363636"/>
+    <rect x="420" y="465" width="110" height="12" rx="6" fill="#D4D4D4"/>
+    <rect x="397" y="511" width="115" height="48" rx="18" fill="#303030"/>
+    <rect x="529" y="511" width="115" height="48" rx="18" fill="#303030"/>
+    <circle cx="591" cy="153" r="8" fill="#E36A6A"/>
+    <circle cx="616" cy="153" r="8" fill="#E36A6A" fill-opacity="0.5"/>
+    <circle cx="641" cy="153" r="8" fill="#E36A6A" fill-opacity="0.28"/>
+  </g>
+  <defs>
+    <filter id="filter0_d_1_2" x="117" y="383" width="606" height="259" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="9"/>
+      <feGaussianBlur stdDeviation="24"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.42 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear_1_2" x1="480" y1="26" x2="480" y2="734" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#404040"/>
+      <stop offset="1" stop-color="#282828"/>
+    </linearGradient>
+    <radialGradient id="paint1_radial_1_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(729 171) rotate(90) scale(136)">
+      <stop stop-color="#EFEFEF" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#EFEFEF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="paint2_radial_1_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(188 120) rotate(90) scale(104)">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

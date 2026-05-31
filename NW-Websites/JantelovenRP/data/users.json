@@ -1,0 +1,10 @@
+{
+    "90000000000000001": {
+        "steamid": "90000000000000001",
+        "name": "Test Staff",
+        "avatar": "",
+        "role": "owner",
+        "discord_authed": true,
+        "server_staff": true
+    }
+}
